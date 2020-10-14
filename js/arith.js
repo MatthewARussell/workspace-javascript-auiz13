@@ -1,1 +1,1 @@
-var num1= document.getElementById('h1');
+var num01= document.getElementsByName('');
