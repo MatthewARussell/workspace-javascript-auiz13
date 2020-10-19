@@ -141,7 +141,15 @@
             </label>
           </p>
         </form>
-        <script></script>
+        <script>
+          function welcome(){
+            var name = document.getElementById('eName').value;
+            var outputE = document.getElementById('message');
+            outpuE.textContent="welcome to JavaScript Event <b>"+name+"<b>";
+          }
+          var fE = document.getElementById('eName');
+          fE.addEventListener('blur', welcome, false);
+        </script>
       </div>
 
       <div class="practice">
