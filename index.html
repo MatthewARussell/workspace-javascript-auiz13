@@ -63,6 +63,7 @@
             <td>second</td>
           </tr>
         </table>
+
         <script>
           document.writeln("<table>");
 
@@ -142,13 +143,14 @@
           </p>
         </form>
         <script>
-          function welcome(){
-            var name = document.getElementById('cName').value;
-            var outputE = document.getElementById('message');
-            outpuE.textContent="welcome to JavaScript Event <b>"+name+"<b>";
+          function welcome() {
+            var name = document.getElementById("cName").value;
+            var outputE = document.getElementById("message");
+            outpuE.textContent =
+              "welcome to JavaScript Event <b>" + name + "<b>";
           }
-          var fE = document.getElementById('cName');
-          fE.addEventListener('blur', welcome, false);
+          var fE = document.getElementById("cName");
+          fE.addEventListener("blur", welcome, false);
         </script>
       </div>
 
@@ -205,6 +207,24 @@
           Choose your favorite theme(warm, cool, hot)
           <input type="text" id="theme" />
         </p>
+        <script type="text/javascript">
+          document.getElementById('theme').addEventListener('blur',changeTheme,false);
+          function changeTheme{
+            var theme = document.getElementById('theme').value;
+            var bcolor;
+            switch (theme){ 
+                        case "warm":
+                            bcolor = "green";
+                            break;
+                        case "hot":
+                            bcolor = "red";
+                            break;
+                        default:
+                            bcolor = "white";
+            }
+             document.body.setAttribute('style', "backgroud-color: "+bcolor);
+          }
+        </script>
       </div>
 
       <div class="practice">
