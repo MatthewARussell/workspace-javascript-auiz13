@@ -352,6 +352,15 @@
             <td id="r6"></td>
           </tr>
         </table>
+        <script>
+          var random = Math.floor(Math.random()*6)+1;
+        
+          var imgE = document.getElementById('dies');
+          imgE.setAttribute('src',"img/die"+randomimg+".png");
+          var stat =[0,0,0,0,0,0];
+          stat[randomimg-1]++;
+
+        </script>
       </div>
 
       <div class="practice">
