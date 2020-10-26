@@ -285,6 +285,8 @@
         <!-- output section -->
         <div id="output"></div>
         <script>
+          function table(){
+            var N = parseInt(document.getElementById('inputnumber2').value);
           var result = "<table>";
           for (var i = 1; i < 10; i++) {
             result = "<tr>";
@@ -295,6 +297,8 @@
             result += "</tr>";
           }
           result += "</table>";
+          document.getElementById('output').innerHTML= result;
+          }
         </script>
       </div>
 
@@ -315,6 +319,13 @@
           Target: Generate 10 basic multiplication problems using JavaScript and
           check the answers
         </p>
+        <script>
+          var numberofmonth = 360;
+          var loanamount = 150000;
+          var interestrate = 0.055;
+          var monthlyrate = interestrate/12;
+          var monthypaymen = loanamount * monthlyrate/(1-Math.pow(1+monthlyrate,-numberofmonth));
+        </script>
       </div>
 
       <div class="practice">
