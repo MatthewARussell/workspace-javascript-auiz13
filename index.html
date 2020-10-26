@@ -208,21 +208,23 @@
           <input type="text" id="theme" />
         </p>
         <script type="text/javascript">
-          document.getElementById('theme').addEventListener('blur',changeTheme,false);
-          function changeTheme(){
-            var theme = document.getElementById('theme').value;
+          document
+            .getElementById("theme")
+            .addEventListener("blur", changeTheme, false);
+          function changeTheme() {
+            var theme = document.getElementById("theme").value;
             var bcolor;
-            switch (theme){ 
-                        case "warm":
-                            bcolor = "green";
-                            break;
-                        case "hot":
-                            bcolor = "red";
-                            break;
-                        default:
-                            bcolor = "white";
+            switch (theme) {
+              case "warm":
+                bcolor = "green";
+                break;
+              case "hot":
+                bcolor = "red";
+                break;
+              default:
+                bcolor = "white";
             }
-             document.body.setAttribute('style', "backgroud-color: "+bcolor);
+            document.body.setAttribute("style", "backgroud-color: " + bcolor);
           }
         </script>
       </div>
@@ -258,22 +260,18 @@
           <input type="button" value="Click for Square" />
         </p>
         <script>
-          $('#square').click(displaysquare);
-          function displaysquare(){
-            var n = parseInt(document.getElementById('inputnumber1').value);
-            var output ="";
-            for(var i=1;i<10;i++){
-              var square =  i*i;
-              output += "<h1>"+ 1 +"<sup> 2 </sup> = " + square +"</h1>";
+          $("#square").click(displaysquare);
+          function displaysquare() {
+            var n = parseInt(document.getElementById("inputnumber1").value);
+            var output = "";
+            for (var i = 1; i < 10; i++) {
+              var square = i * i;
+              output += "<h1>" + 1 + "<sup> 2 </sup> = " + square + "</h1>";
             }
             console.log(n);
             document.writeln(ooutput);
-            
-
-
           }
         </script>
-
       </div>
 
       <div class="practice">
@@ -288,13 +286,13 @@
         <div id="output"></div>
         <script>
           var result = "<table>";
-          for(var i = 1 ; i<10; i++){
-            result ="<tr>";
-            for(var j=1;1<10; j++){
+          for (var i = 1; i < 10; i++) {
+            result = "<tr>";
+            for (var j = 1; 1 < 10; j++) {
               var product = i * j;
-                result+="<td>"+i+" x "+j+"="+product+"</td>";
+              result += "<td>" + i + " x " + j + "=" + product + "</td>";
             }
-            result+= "</tr>";
+            result += "</tr>";
           }
           result += "</table>";
         </script>
