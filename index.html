@@ -286,6 +286,18 @@
 
         <!-- output section -->
         <div id="output"></div>
+        <script>
+          var result = "<table>";
+          for(var i = 1 ; i<10; i++){
+            result ="<tr>";
+            for(var j=1;1<10; j++){
+              var product = i * j;
+                result+="<td>"+i+" x "+j+"="+product+"</td>";
+            }
+            result+= "</tr>";
+          }
+          result += "</table>";
+        </script>
       </div>
 
       <div class="practice">
