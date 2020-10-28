@@ -353,13 +353,13 @@
           </tr>
         </table>
         <script>
-          var random = Math.floor(Math.random()*6)+1;
-        
-          var imgE = document.getElementById('dies');
-          imgE.setAttribute('src',"img/die"+randomimg+".png");
-          var stat =[0,0,0,0,0,0];
-          stat[randomimg-1]++;
+          var randomimg = Math.floor(Math.random()*6)+1;
+              console.log(randomimg);
+              var imgE = document.getElementById('dies');
+              imgE.setAttribute('src',"img/die"+randomimg+".png");
 
+              var stat = [0,0,0,0,0,0];
+              stat[randomimg-1]++;
         </script>
       </div>
 
@@ -380,6 +380,29 @@
         <div class="img-container-hide">
           <img src="img/usca5.jpg" alt="usca" />
         </div>
+        <script>
+                  // get the elements
+               /* var imglist = document.querySelectorAll('.img-container-hide');
+                imglist[0].setAttribute('class','img-container');
+
+                  //index which points to current image
+                var index = 0;
+
+                  //run function every 5 seconds
+                setInterval(runnow, 5000);
+
+                  //automatically change to another image
+                function runnow(){
+                  imglist[index].setAttribute('class','img-container-hide');
+                  index++;
+                  imglist[index].setAttribute('class','img-container');
+                  
+              
+
+                }
+
+                </script>
+
       </div>
 
       <div class="practice">
